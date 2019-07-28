@@ -1,0 +1,7 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+  <image class='avatar' src='{{avatarUrl}}'></image>
+  <button style='display:{{isShow? "block":"none"}}' open-type='getUserInfo' bindgetuserinfo='handleUserInfo'>获取授权</button>
+  <text class='word'>hello {{nickName}}</text>
+  <text bindtap="handleClick" class='goTo'>开启小程序之旅</text>
+</view>

@@ -1,0 +1,24 @@
+<template name='moviePiece'>
+  <view class='movieInfo'>
+    <!-- 电影海报 -->
+    <view class='poster'>
+      <image class='moviePoster' src='{{poster}}'></image>
+    </view>
+    <!-- 电影信息 -->
+    <view class='info'>
+    <!-- 电影标题和演员、分类 -->
+      <text class='movieBriefTitles'>{{head}}</text>
+      <text class='movieBriefNums'>{{tail}}</text>
+      <!-- 观众评分 -->
+      <view class='audienceContainer'>
+        <image class='stars' src='/images/newStar.png'></image>
+        <image class='stars' src='/images/newStar.png'></image>
+        <image class='stars' src='/images/newStar.png'></image>
+        <text class='core'>{{core}}</text>
+        <text class='comments'>{{comments}}</text>
+      </view>
+      <!-- 引用 -->
+      <text class='quote'>" {{quote}}"</text>
+    </view>
+  </view>
+</template>

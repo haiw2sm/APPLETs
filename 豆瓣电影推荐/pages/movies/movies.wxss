@@ -1,0 +1,19 @@
+/* pages/secondPage/secondPage.wxss */
+@import '/pages/movies-tmp/movies-tmp.wxss'; 
+page{
+  height: 100%;
+  width: 100%  
+}
+
+swiper{
+  width: 100%;
+  height: 400rpx;
+}
+
+swiper image{
+  width: 100%;
+  height: 100%
+}
+
+
+

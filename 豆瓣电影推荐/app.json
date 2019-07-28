@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/movies/movies",
+    "pages/detail/detail",
+    "pages/index/index",
+    "pages/player/player"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#489B81",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "微信小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap.json"
+}

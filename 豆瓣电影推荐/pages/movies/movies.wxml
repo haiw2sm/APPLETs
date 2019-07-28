@@ -1,0 +1,61 @@
+  <!--pages/secondPage/secondPage.wxml-->
+<import src='/pages/movies-tmp/movies-tmp.wxml' />
+
+<!-- background: #489B81' -->
+<view style='width:{{wid}}; height:{{hg}}'>
+  <!-- 列表渲染 -->
+  <swiper catchtap='carousel2detail' autoplay='true' interval='1000' indicator-dots indicator-color='yellowgreen' indicator-active-color='pink'>
+    <swiper-item>
+      <image data-index='0' src='{{carousel}}1.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='1' src='{{carousel}}2.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='2' src='{{carousel}}3.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='3' src='{{carousel}}4.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='4' src='{{carousel}}5.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='5' src='{{carousel}}6.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='6' src='{{carousel}}7.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='7' src='{{carousel}}8.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='8' src='{{carousel}}9.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='9' src='{{carousel}}10.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='10' src='{{carousel}}11.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='11' src='{{carousel}}12.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='12' src='{{carousel}}13.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='13' src='{{carousel}}14.jpg'></image>
+    </swiper-item>
+  
+  </swiper>
+
+
+  <!-- 列表渲染 -->
+  <block wx:for='{{movieArry}}'  wx:key='{{index}}'>
+    <view catchtap='toDetail' data-index='{{index}}'>
+      <template is='moviePiece' data='{{...item}}'/> 
+    </view>
+  </block>
+</view>
+

@@ -1,0 +1,10 @@
+<!--pages/player/player.wxml-->
+<import src='/pages/movies-tmp/movies-tmp.wxml' />
+<view class='playWin'>
+  <video id='firstVideo' src='/movies/hongcun.mp4' controls> </video>
+  <view class='btnContainer'>
+    <button bindtap='bindPlay' type='primary'>播放</button>
+    <button bindtap='bindPause' type='primary'>暂停</button>
+    <button bindtap='bindFullScreen' type='primary'>全屏</button>
+  </view>
+</view>

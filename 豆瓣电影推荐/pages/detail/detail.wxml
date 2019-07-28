@@ -1,0 +1,17 @@
+<!--pages/detail/detail.wxml-->
+<view style='width:{{wid}};height:{{hg}}' class='detailContainer'>
+	<view class='posterContainer'>
+		<image class="poster" src="{{detailObj.poster}}"></image>
+	</view>
+  
+	<view class="iconContainer">
+    <view class="line"></view>
+    <image catchtap='collectionBtn' class="collection" src="{{isCollect?'/images/icon/collection_t.png':'/images/icon/collection_f.png'}}"></image>
+    <image catchtap="shareBtn" class="share" src="{{isShare?'/images/icon/share_t.png':'/images/icon/share_f.png'}}"></image>
+	</view>
+	<view style='width: {{wid}}'class="briefContainer">
+    <text class="brief">
+      {{detailObj.brief}}
+    </text>
+  </view>
+</view>

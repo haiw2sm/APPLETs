@@ -1,0 +1,60 @@
+/* pages/detail/detail.wxss */
+page{
+	width: 100%;
+	height: 100%;
+
+}
+.detailContainer{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%
+}
+
+.posterContainer{
+	width: 100%;
+	height: 34%;
+}
+
+.poster{
+	height: 100%;
+	width: 100%
+}
+
+.customsizeContainer{
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  width: 100%;
+  float: left;
+  position: relative
+}
+
+.iconContainer .line{
+  border-bottom: 1rpx solid grey;
+  width: 90%;
+  position: absolute;
+  height: 2rpx;
+  margin-top: 39rpx;
+  margin-left: 5%
+
+}
+.iconContainer image{
+  height: 80rpx;
+  width: 80rpx;
+  vertical-align: middle;
+  float: right
+}
+
+.briefContainer{
+	height: 66%;
+	padding: 0 20rpx;
+}
+
+.brief{
+	text-align: center;
+	font-size: 22rpx;
+	line-height: 60rpx;
+	display: inline-block;
+}
+
